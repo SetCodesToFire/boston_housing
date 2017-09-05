@@ -13290,7 +13290,7 @@ Think about the pros and cons of adding more training points based on if the tra
 <ul>
 <li>the maximum depth of the second graph is 3</li>
 <li>the testing curve increases and training curve decreases slightly as we add more training points</li>
-<li>yes more training points will help to generalise the model more accurately.This is the ideal model</li>
+<li>yes more training points will help to generalise the model more accurately but not always.This is because maybe the model may not be able to fir large data or if we have large training sets then the point of prediciton is nothing.We are then not generalising the model,we are teaching(hardcoding) it and it would impact the very own cause of machine learning.</li>
 </ul>
 
 </div>
@@ -13839,11 +13839,7 @@ YII=
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <ul>
-<li>In grid search technique we make a grid of parameters and build a model with it,then after we check for the efficiency of the model with the help of cross valiadation set. High the accuracy , ideal will then be the model.</li>
-<li><p>It is used to find the particular paramteres that help us make a model,for eg in a linear regression model where 
-  h(x) = 0o + x101 + x202,</p>
-<p>here x1,x2 are the features and 0(read as theta ),01,02 are the parameters.with grid search technique we can find the appropriate 0 that can help build an ideal model.</p>
-</li>
+<li>In grid search technique we have a set of models which differ on the basis of the parameters,the best model is choosen on the basis of their performance on the respective cross validation set.So here it help in finding the best learning algorithm and moreover it helps determining the best parameters for the model.</li>
 </ul>
 
 </div>
