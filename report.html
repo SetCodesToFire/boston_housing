@@ -12195,7 +12195,8 @@ Standard deviation of prices: $165,171.13
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong>The benefit of splitting the data into two parts i.e, training and testing is that after creating a model with the training set,now we can check the model with the help of testing data.If the testing data allows the model to be used (i.e, it gave low errors,and the predictions we get from the test features are more accurate) then we can use the model.Else we will recombine our thoughts and build another model and repeat the process untill we find something really good to predict accurately.</p>
+<p><strong>Answer: </strong>The benefit of splitting the data into two parts i.e, training and testing is that after creating a model with the training set,now we can check the model with the help of testing data.Also we cannot use the same data for training and testing because this would obviously provide us with predictions which were already considered while making the model.
+So we split the data into testing and training set and if the testing data allows the model to be used (i.e, it gave low errors,and the predictions we get from the test features are more accurate) then we can use the model.Else we will recombine our thoughts and build another model and repeat the process untill we find something really good to predict accurately.</p>
 
 </div>
 </div>
@@ -13290,7 +13291,7 @@ Think about the pros and cons of adding more training points based on if the tra
 <ul>
 <li>the maximum depth of the second graph is 3</li>
 <li>the testing curve increases and training curve decreases slightly as we add more training points</li>
-<li>yes more training points will help to generalise the model more accurately but not always.This is because maybe the model may not be able to fir large data or if we have large training sets then the point of prediciton is nothing.We are then not generalising the model,we are teaching(hardcoding) it and it would impact the very own cause of machine learning.</li>
+<li>yes more training points will help to generalise the model more accurately but not always.Once the testing score get a constant curve adding more data would not necessarily help.</li>
 </ul>
 
 </div>
@@ -13839,7 +13840,7 @@ YII=
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <ul>
-<li>In grid search technique we have a set of models which differ on the basis of the parameters,the best model is choosen on the basis of their performance on the respective cross validation set.So here it help in finding the best learning algorithm and moreover it helps determining the best parameters for the model.</li>
+<li>In grid search technique we have a set of models which differ on the basis of the parameters,the best model is choosen on the basis of their performance on the respective cross validation set.The grid search technique tries every combination of the provided hyper-parameter values in order to find the best model.Then we find the highest cross-validation accuracy that matches with the corresponding parameters.So here it help in finding the best learning algorithm and moreover it helps determining the best parameters for the model.</li>
 </ul>
 
 </div>
